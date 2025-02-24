@@ -4,8 +4,7 @@ const baseHabitSchema = z
     .object({
         name: z.string(),
         description: z.string(),
-        frequencyUnit: z.enum(["daily", "weekly", "monthly"]),
-        frequencyValue: z.number(),
+        frequencyCron: z.string(),
     })
     .strict();
 
